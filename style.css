@@ -237,7 +237,7 @@ footer a {
     }
 
     .intro img {
-        width: 278px;
+        width: 70%;
         height: 390px;
     }
 
@@ -253,11 +253,11 @@ footer a {
 
     .implement h3 {
         font-size: 42px;
-        width: 378px;
+        width: 70%;
     }
 
     .implement p {
-        width: 378px;
+        width: 70%;
     }
 
     .something .container {
