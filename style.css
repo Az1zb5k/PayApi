@@ -269,4 +269,8 @@ footer a {
     footer .logo {
         flex-direction: column;
     }
+
+    footer .logo {
+        gap: 0;
+    }
 }
