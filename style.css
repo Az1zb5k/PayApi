@@ -1,0 +1,272 @@
+/* Universal styles */
+body {
+    margin: 0;
+    color: rgba(237, 243, 248, 1);
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    padding-top: 30px;
+    padding-bottom: 53px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a {
+    color: rgba(54, 83, 107, 1);
+    font-size: 15px;
+    line-height: 17.63px;
+}
+
+header a:hover {
+    color: rgba(186, 66, 112, 1);
+    display: block;
+    transform: scale(1.1);
+}
+
+header .btn a {
+    color: white;
+    padding: 10px 30px;
+    background-color: rgba(186, 66, 112, 1);
+    border-radius: 20px;
+}
+
+header .btn a:hover {
+    display: inline;
+    background-color: white;
+    color: rgba(186, 66, 112, 1);
+    border: 2px solid rgba(186, 66, 112, 1);
+}
+
+header .menu {
+    display: none;
+}
+
+/* Intro */
+.intro .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro h3 {
+    width: 546px;
+    color: rgba(54, 83, 107, 1);
+    font-size: 62px;
+    line-height: 62px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro img {
+    width: 45%;
+    height: 650px;
+}
+
+/* Implement */
+.implement .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.implement img {
+    margin-top: 100px;
+}
+
+.implement h3 {
+    width: 445px;
+    font-size: 48px;
+    line-height: 56px;
+    color: rgba(54, 83, 107, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.implement p {
+    width: 445px;
+    color: rgba(108, 130, 148, 1);
+    font-size: 15px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Something */
+.something .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.something .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.something h3 {
+    color: #36536B;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.something img {
+    width: 70%;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    background-color: #1B262F;
+}
+
+footer .container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo {
+    display: flex;
+    gap: 65px;
+}
+
+footer ul {
+    display: flex;
+    gap: 40px;
+}   
+
+footer a {
+    color: #FBFCFE;
+    font-size: 15px;
+    line-height: 17.63px;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1200px) {
+    /* Header */
+    header .container {
+        padding: 0 20px;
+    }
+
+    /* Intro */
+    .intro .container {
+        flex-direction: column-reverse;
+    }
+
+    .intro h3 {
+        text-align: center;
+        font-size: 48px;
+        width: 573px;
+    }
+
+    .intro img {
+        width: 309px;
+        height: 450px;
+    }
+
+    /* Implement */
+    .implement .container {
+        flex-direction: column;
+    }
+
+    .implement img {
+        width: 550px;
+        height: 400px;
+    }
+
+    .implement h3 {
+        text-align: center;
+        margin: -50px auto;
+    }
+
+    .implement p {
+        width: 573px;
+        text-align: center;
+        margin: 80px auto;
+    }
+
+    /* Something */
+    .something .container {
+        justify-content: space-evenly;
+    }
+
+    footer .container {
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px){
+    .container {
+        padding: 0 20px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+    }
+
+    .intro img {
+        width: 278px;
+        height: 390px;
+    }
+
+    .intro h3 {
+        width: 377px;
+        font-size: 30px;
+    }
+
+    .implement img {
+        width: 578px;
+        height: 209;
+    }
+
+    .implement h3 {
+        font-size: 42px;
+        width: 378px;
+    }
+
+    .implement p {
+        width: 378px;
+    }
+
+    .something .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    footer .container,
+    footer .logo {
+        flex-direction: column;
+    }
+}
